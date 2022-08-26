@@ -43,17 +43,16 @@ export const LakehouseForm = memo(() => {
     {
       key: "Products to Return",
       fields: ["articleNumber"],
-      skippable: true,
       children: <ProductsStep />,
     },
     {
       key: "Contact Details",
-      fields: ["addressType", "Firstname", "Lastname", "Email"],
+      fields: ["Firstname", "Lastname", "Email"],
       children: <ContactStep />,
     },
     {
       key: "Schedule",
-      fields: ["properties"],
+      fields: [],
       skippable: true,
       children: <ConfigurationStep />,
     },
