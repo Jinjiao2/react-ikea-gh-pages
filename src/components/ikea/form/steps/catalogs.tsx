@@ -42,10 +42,10 @@ export const ProductsStep = () => {
         description="Note:  E.g 1234567 0r 123.456.789"
       />
       <ButtonWrapper
-        as="button"
+        as="div"
         textStyle="h3Emph"
         bg="black"
-        minWidth="200px"
+        width="20%"
         color="white"
         onClick={clickAddItem}
       >
@@ -103,11 +103,10 @@ const ButtonWrapper = styled(Box)`
   margin-top: 0.5rem;
   margin-bottom: 1.8rem;
   font-size: 0.75rem;
-  min-height: 2.5rem;
-  padding: 0 1rem;
   border-radius: 64px;
   cursor: pointer;
   text-align: center;
+  padding: 3px;
 `;
 const TextLabel = styled(Text)`
   white-space: nowrap;

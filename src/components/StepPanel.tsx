@@ -25,7 +25,7 @@ const StepPanel = (props: any) => {
       <div className="steps-action">
         {activeStep < props.steps.length - 1 && (
           <Button type="primary" onClick={() => next()}>
-            Next
+            Continue
           </Button>
         )}
         {activeStep === props.steps.length - 1 && (
