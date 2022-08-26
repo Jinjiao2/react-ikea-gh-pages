@@ -83,8 +83,7 @@ export const DataPlatformShell: FC = ({ children }) => {
               pt="2px"
               mr="8px"
             />
-            Join IKEA Family for free | Get member-only discounts, benefits and
-            more
+            Join IKEA Family for free | Get member-only discounts
           </Text>
         </TextWrapper>
       </Box>
@@ -96,7 +95,7 @@ export const DataPlatformShell: FC = ({ children }) => {
             variant="full"
             containerProps={{
               position: "sticky",
-              height: "80px",
+              height: "70px",
               backgroundColor: "bg",
             }}
             banner={<Logo data-testid="logo" />}

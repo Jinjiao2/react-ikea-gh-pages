@@ -14,7 +14,7 @@ export const IkeasList: FC = () => {
     <ThemeProvider theme={theme}>
       <Box>
         <TabbedHeader>
-          <TabbedHeader.ResponsiveTabs variant="secondary">
+          <TabbedHeader.ResponsiveTabs variant="secondary" color="black">
             <TabbedHeader.Tab>Products</TabbedHeader.Tab>
             <TabbedHeader.Tab>Rooms</TabbedHeader.Tab>
             <TabbedHeader.Tab>Offers</TabbedHeader.Tab>
