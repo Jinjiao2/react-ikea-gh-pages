@@ -3,7 +3,7 @@ import { Box, Input, SearchAltIcon } from "@tidbits/react-tidbits";
 
 export const TopLinks = (): JSX.Element => {
   return (
-    <Box width="80%">
+    <Box width="75%">
       <SearchInput
         IconComponent={SearchAltIcon}
         type="search"
