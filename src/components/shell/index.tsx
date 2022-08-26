@@ -2,7 +2,17 @@ import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
 
 import React, { FC, useEffect, useState } from "react";
 
-import { Button, Modal, List, Box, Icons, Text } from "@tidbits/react-tidbits";
+import {
+  Button,
+  Modal,
+  List,
+  Box,
+  Icons,
+  Text,
+  Footer,
+  Breadcrumbs,
+  HR,
+} from "@tidbits/react-tidbits";
 import TopHeader from "@tidbits/react-tidbits/TopHeader";
 import { GlobalStyle } from "@tidbits/react-tidbits/global";
 import theme, { dark } from "@tidbits/react-tidbits/theme";
@@ -30,36 +40,36 @@ export const DataPlatformShell: FC = ({ children }) => {
     padding: 0;
   }
 `;
-  const renderModal = () => {
-    return (
-      <Modal.Window
-        open={isModalOpen}
-        closeModal={() => setIsModalOpen(false)}
-        closeOnEscape={true}
-        closeOnClickOutside={true}
-      >
-        <Modal.Content>
-          <Modal.Header>Current versions</Modal.Header>
-          <Modal.Body>
-            <List.UL listStyle="noBullet">
-              {process.env.UI_VERSION?.split(",")?.map((item: string) => {
-                return <List.LI key={item}>{item}</List.LI>;
-              })}
-            </List.UL>
-          </Modal.Body>
-        </Modal.Content>
-        <Modal.Footer display="flex" justifyContent="flex-end">
-          <Button
-            variant="standard"
-            primary
-            onClick={() => setIsModalOpen(false)}
-          >
-            Close
-          </Button>
-        </Modal.Footer>
-      </Modal.Window>
-    );
-  };
+  // const renderModal = () => {
+  //   return (
+  //     <Modal.Window
+  //       open={isModalOpen}
+  //       closeModal={() => setIsModalOpen(false)}
+  //       closeOnEscape={true}
+  //       closeOnClickOutside={true}
+  //     >
+  //       <Modal.Content>
+  //         <Modal.Header>Current versions</Modal.Header>
+  //         <Modal.Body>
+  //           <List.UL listStyle="noBullet">
+  //             {process.env.UI_VERSION?.split(",")?.map((item: string) => {
+  //               return <List.LI key={item}>{item}</List.LI>;
+  //             })}
+  //           </List.UL>
+  //         </Modal.Body>
+  //       </Modal.Content>
+  //       <Modal.Footer display="flex" justifyContent="flex-end">
+  //         <Button
+  //           variant="standard"
+  //           primary
+  //           onClick={() => setIsModalOpen(false)}
+  //         >
+  //           Close
+  //         </Button>
+  //       </Modal.Footer>
+  //     </Modal.Window>
+  //   );
+  // };
 
   return (
     <ThemeProvider theme={theme}>
@@ -120,7 +130,40 @@ export const DataPlatformShell: FC = ({ children }) => {
           <IkeasList />
         </Content>
       </Container>
-      {isModalOpen && renderModal()}
+      {/* {isModalOpen && renderModal()} */}
+
+      <Footer sa="0">
+        <Breadcrumbs sb="spacer20">
+          <Breadcrumbs.Crumb textStyle="bodySmallEmph">
+            Join IKEA Family for free
+          </Breadcrumbs.Crumb>
+          <Breadcrumbs.Crumb>Item 1</Breadcrumbs.Crumb>
+          <Breadcrumbs.Crumb>Item 2</Breadcrumbs.Crumb>
+          <Breadcrumbs.Crumb>Item 3</Breadcrumbs.Crumb>
+          <Breadcrumbs.Crumb>Item 4</Breadcrumbs.Crumb>
+        </Breadcrumbs>
+        <HR sb="spacer15" />
+        <Text as="div" color="labelCaption" textStyle="bodySmallRegular">
+          <Box display={["block", "inline"]}>
+            © Inter IKEA Systems B.V. 1999-2022
+          </Box>
+          <List.Piped
+            textStyle="bodySmallRegular"
+            display="inline"
+            ml={[0, "30px"]}
+          >
+            <List.LI color="labelCaption">
+              <Footer.Link href="#">Help & support</Footer.Link>
+            </List.LI>
+            <List.LI color="labelCaption">
+              <Footer.Link href="#">Ways to shop</Footer.Link>
+            </List.LI>
+            <List.LI color="labelCaption">
+              <Footer.Link href="#">My account</Footer.Link>
+            </List.LI>
+          </List.Piped>
+        </Text>
+      </Footer>
     </ThemeProvider>
   );
 };
