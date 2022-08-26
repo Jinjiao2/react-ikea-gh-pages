@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ValidationError component renders correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="Box-sc-18eybku-0 Text__BaseText-sc-4nqr4q-0 Text-sc-4nqr4q-1 sc-bdnxRM jkAfEG cHQCpL hNbiXz bNbJHD"
+        color="error"
+      >
+        <svg
+          class="SvgIcon__Icon-sc-194a9zm-0 drHuqK sc-gtsrHT kHhdZq"
+          viewBox="0 0 290 290"
+        >
+          <path
+            d="M145 285c77.017 0 140-63 140-140S222.017 5 145 5C67.983 5 5 68 5 145s62.9829 140 140 140zm-47.2372-79.561c-7.3594 0-13.3496-6.1463-13.3496-13.4878 0-3.5853 1.5404-6.8292 3.9364-9.0488L126.1736 145l-37.824-37.9024c-2.396-2.2195-3.9364-5.4635-3.9364-9.0488 0-7.3415 5.9902-13.1464 13.3496-13.1464 3.5942 0 6.6749 1.3659 8.8998 3.7561l38.1663 37.9025 38.5085-38.0732c2.5672-2.7317 5.4768-3.9268 8.8998-3.9268 7.3594 0 13.3497 5.9756 13.3497 13.317 0 3.5854-1.198 6.4878-3.9365 9.0488L163.6553 145l37.8239 37.561c2.396 2.561 3.9365 5.6341 3.9365 9.3902 0 7.3415-5.9902 13.4878-13.3497 13.4878-3.7653 0-7.017-1.7073-9.242-3.9268l-37.995-37.9024-37.824 37.9024c-2.225 2.3902-5.648 3.9268-9.2422 3.9268z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        test
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="Box-sc-18eybku-0 Text__BaseText-sc-4nqr4q-0 Text-sc-4nqr4q-1 sc-bdnxRM jkAfEG cHQCpL hNbiXz bNbJHD"
+      color="error"
+    >
+      <svg
+        class="SvgIcon__Icon-sc-194a9zm-0 drHuqK sc-gtsrHT kHhdZq"
+        viewBox="0 0 290 290"
+      >
+        <path
+          d="M145 285c77.017 0 140-63 140-140S222.017 5 145 5C67.983 5 5 68 5 145s62.9829 140 140 140zm-47.2372-79.561c-7.3594 0-13.3496-6.1463-13.3496-13.4878 0-3.5853 1.5404-6.8292 3.9364-9.0488L126.1736 145l-37.824-37.9024c-2.396-2.2195-3.9364-5.4635-3.9364-9.0488 0-7.3415 5.9902-13.1464 13.3496-13.1464 3.5942 0 6.6749 1.3659 8.8998 3.7561l38.1663 37.9025 38.5085-38.0732c2.5672-2.7317 5.4768-3.9268 8.8998-3.9268 7.3594 0 13.3497 5.9756 13.3497 13.317 0 3.5854-1.198 6.4878-3.9365 9.0488L163.6553 145l37.8239 37.561c2.396 2.561 3.9365 5.6341 3.9365 9.3902 0 7.3415-5.9902 13.4878-13.3497 13.4878-3.7653 0-7.017-1.7073-9.242-3.9268l-37.995-37.9024-37.824 37.9024c-2.225 2.3902-5.648 3.9268-9.2422 3.9268z"
+          fill-rule="evenodd"
+        />
+      </svg>
+      test
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

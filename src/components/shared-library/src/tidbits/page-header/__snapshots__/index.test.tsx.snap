@@ -1,0 +1,178 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageHeader component renders correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="Box-sc-18eybku-0 eOkCuS"
+      >
+        <div
+          class="Box-sc-18eybku-0 iTnhUT"
+          display="flex"
+          overflow="auto"
+          width="100%"
+        >
+          <div
+            class="Box-sc-18eybku-0 cYkPuA"
+          >
+            <div
+              class="Box-sc-18eybku-0 dtifsu"
+            >
+              <div
+                class="Box-sc-18eybku-0 fcFAhW"
+                display="flex"
+              >
+                <h3
+                  class="Box-sc-18eybku-0 Text__BaseText-sc-4nqr4q-0 Text-sc-4nqr4q-1 hbJJzM ivoEwq IGmWx"
+                  color="title"
+                >
+                  My title
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div
+            class="Box-sc-18eybku-0 ljIvKt SectionHeading__Middle-sc-1cm5qjt-0 hTkjql"
+          />
+          <div
+            class="Box-sc-18eybku-0 icsQEp SectionHeading__Right-sc-1cm5qjt-1 iRnONl"
+            display="flex"
+          >
+            <button
+              class="Box-sc-18eybku-0 Link-sc-1tc8rtf-0 TUGtf jwLdat"
+              color="#0070C9"
+              cursor="pointer"
+              visibility="hidden"
+            >
+              <svg
+                class="SvgIcon__Icon-sc-194a9zm-0 fXVIxy"
+                viewBox="0 0 290 290"
+              >
+                <path
+                  d="M116.8371 226.6743c23.2576 0 44.88-7.268 62.6866-19.6237l72.68 72.6801c3.634 3.634 8.3582 5.2693 13.2642 5.2693 10.3568 0 17.9883-7.9948 17.9883-18.3517 0-4.906-1.6353-9.6301-5.0877-13.0824l-72.135-72.3167c13.4459-18.3517 21.4407-41.0643 21.4407-65.4121C227.6742 54.7859 177.8884 5 116.8371 5 55.7858 5 6 54.786 6 115.8371c0 61.0513 49.7858 110.8372 110.8371 110.8372zm0-28.1636c-45.2433 0-82.6736-37.4302-82.6736-82.6736 0-45.2433 37.4303-82.6735 82.6736-82.6735 45.2433 0 82.6735 37.4302 82.6735 82.6735 0 45.2434-37.4302 82.6736-82.6735 82.6736z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div
+              class="sc-bdnxRM cpQBWR"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="Box-sc-18eybku-0 eOkCuS"
+    >
+      <div
+        class="Box-sc-18eybku-0 iTnhUT"
+        display="flex"
+        overflow="auto"
+        width="100%"
+      >
+        <div
+          class="Box-sc-18eybku-0 cYkPuA"
+        >
+          <div
+            class="Box-sc-18eybku-0 dtifsu"
+          >
+            <div
+              class="Box-sc-18eybku-0 fcFAhW"
+              display="flex"
+            >
+              <h3
+                class="Box-sc-18eybku-0 Text__BaseText-sc-4nqr4q-0 Text-sc-4nqr4q-1 hbJJzM ivoEwq IGmWx"
+                color="title"
+              >
+                My title
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div
+          class="Box-sc-18eybku-0 ljIvKt SectionHeading__Middle-sc-1cm5qjt-0 hTkjql"
+        />
+        <div
+          class="Box-sc-18eybku-0 icsQEp SectionHeading__Right-sc-1cm5qjt-1 iRnONl"
+          display="flex"
+        >
+          <button
+            class="Box-sc-18eybku-0 Link-sc-1tc8rtf-0 TUGtf jwLdat"
+            color="#0070C9"
+            cursor="pointer"
+            visibility="hidden"
+          >
+            <svg
+              class="SvgIcon__Icon-sc-194a9zm-0 fXVIxy"
+              viewBox="0 0 290 290"
+            >
+              <path
+                d="M116.8371 226.6743c23.2576 0 44.88-7.268 62.6866-19.6237l72.68 72.6801c3.634 3.634 8.3582 5.2693 13.2642 5.2693 10.3568 0 17.9883-7.9948 17.9883-18.3517 0-4.906-1.6353-9.6301-5.0877-13.0824l-72.135-72.3167c13.4459-18.3517 21.4407-41.0643 21.4407-65.4121C227.6742 54.7859 177.8884 5 116.8371 5 55.7858 5 6 54.786 6 115.8371c0 61.0513 49.7858 110.8372 110.8371 110.8372zm0-28.1636c-45.2433 0-82.6736-37.4302-82.6736-82.6736 0-45.2433 37.4303-82.6735 82.6736-82.6735 45.2433 0 82.6735 37.4302 82.6735 82.6735 0 45.2434-37.4302 82.6736-82.6735 82.6736z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div
+            class="sc-bdnxRM cpQBWR"
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

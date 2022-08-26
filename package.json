@@ -1,0 +1,63 @@
+{
+  "name": "lineage-libraries-performance-check",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@hookform/error-message": "^2.0.0",
+    "@react-hook/window-size": "^3.0.7",
+    "@testing-library/react": "^13.1.1",
+    "@testing-library/user-event": "^13.5.0",
+    "@tidbits/react-tidbits": "^2.0.4",
+    "@types/d3": "^7.1.0",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^14.11.28",
+    "@types/react": "^18.0.6",
+    "@types/react-dom": "^18.0.2",
+    "@types/react-tabs": "^5.0.5",
+    "@types/styled-components": "^5.1.25",
+    "antd": "^4.20.1",
+    "echarts": "^5.3.3",
+    "echarts-for-react": "^3.0.2",
+    "prettier": "^2.6.2",
+    "query-string": "^7.1.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-flow-renderer": "^10.1.2",
+    "react-hook-form": "^7.34.2",
+    "react-horizontal-datepicker": "^2.0.3",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-tabs": "^5.1.0",
+    "styled-components": "^5.3.5",
+    "typescript": "^4.6.3",
+    "vx": "^0.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "format": "prettier --color --write '**/*.{ts,tsx,css,json,md}'"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
