@@ -17,6 +17,7 @@ import {
 } from "@tidbits/react-tidbits";
 
 import EchartsProjects from "../chart";
+import { useFormContext } from "react-hook-form";
 
 export const ConfigurationStep = () => {
   const [showAddress, setShowAddress] = useState(false);
@@ -35,6 +36,7 @@ export const ConfigurationStep = () => {
   const selectedTime = () => {
     setelectedTime(true);
   };
+  const { register } = useFormContext();
   return (
     <Box>
       <Text textStyle="h4Emph" mb="spacer15">
@@ -50,6 +52,7 @@ export const ConfigurationStep = () => {
           <Form.Label>
             Search by city, province
             <Input.Text
+              {...register("city")}
               IconComponent={SearchAltIcon}
               type="text"
               placeholder="Search"
@@ -103,148 +106,150 @@ export const ConfigurationStep = () => {
             </Box>
           )}
         </Box>
-        <Box textStyle="bodyRegular">
-          <Wrapper>
-            <DatePicker
-              endDate={40}
-              getSelectedDay={selectedDay}
-              labelFormat={"MMMM"}
-              color={"#111"}
-            />
-            <MenuList.HR />
-            <layouts.EvenGrid cols={[1, 2, 4]}>
-              <TimeWrapper>
-                <Text id="cf">10:00 am</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">10:15 am</Text>
-              </TimeWrapper>
-              <TimeWrapper backgroundColor="ctrlDisabled">
-                <Text id="cf">10:30 am</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">10:45 am</Text>
-              </TimeWrapper>
-              <TimeWrapper onClick={selectedTime} isSelected={isSelectedTime}>
-                <Text id="cf">11:00 am</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">11:15 am</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">11:30 am</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">11:45 am</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">12:00 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">12:15 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper backgroundColor="ctrlDisabled">
-                <Text id="cf">12:30 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">12:45 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper backgroundColor="ctrlDisabled">
-                <Text id="cf">1:00 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">1:15 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">1:30 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">1:45 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">2:00 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">2:15 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper backgroundColor="ctrlDisabled">
-                <Text id="cf">2:30 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper backgroundColor="ctrlDisabled">
-                <Text id="cf">2:45 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper backgroundColor="ctrlDisabled">
-                <Text id="cf">3:00 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">3:15 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">3:30 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">3:45 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">4:00 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper backgroundColor="ctrlDisabled">
-                <Text id="cf">4:15 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper backgroundColor="ctrlDisabled">
-                <Text id="cf">4:30 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">4:45 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">5:00 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">5:15 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">5:30 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">5:45 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper backgroundColor="ctrlDisabled">
-                <Text id="cf">6:00 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper backgroundColor="ctrlDisabled">
-                <Text id="cf">6:15 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">6:30 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">6:45 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">7:00 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">7:15 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">7:30 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">7:45 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">8:00 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">8:15 pm</Text>
-              </TimeWrapper>
-              <TimeWrapper>
-                <Text id="cf">8:30 pm</Text>
-              </TimeWrapper>
-            </layouts.EvenGrid>
-          </Wrapper>
-        </Box>
+        {showGraph && (
+          <Box textStyle="bodyRegular">
+            <Wrapper>
+              <DatePicker
+                endDate={40}
+                getSelectedDay={selectedDay}
+                labelFormat={"MMMM"}
+                color={"#111"}
+              />
+              <MenuList.HR />
+              <layouts.EvenGrid cols={[1, 2, 4]}>
+                <TimeWrapper>
+                  <Text id="cf">10:00 am</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">10:15 am</Text>
+                </TimeWrapper>
+                <TimeWrapper backgroundColor="ctrlDisabled">
+                  <Text id="cf">10:30 am</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">10:45 am</Text>
+                </TimeWrapper>
+                <TimeWrapper onClick={selectedTime} isSelected={isSelectedTime}>
+                  <Text id="cf">11:00 am</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">11:15 am</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">11:30 am</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">11:45 am</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">12:00 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">12:15 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper backgroundColor="ctrlDisabled">
+                  <Text id="cf">12:30 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">12:45 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper backgroundColor="ctrlDisabled">
+                  <Text id="cf">1:00 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">1:15 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">1:30 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">1:45 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">2:00 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">2:15 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper backgroundColor="ctrlDisabled">
+                  <Text id="cf">2:30 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper backgroundColor="ctrlDisabled">
+                  <Text id="cf">2:45 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper backgroundColor="ctrlDisabled">
+                  <Text id="cf">3:00 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">3:15 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">3:30 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">3:45 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">4:00 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper backgroundColor="ctrlDisabled">
+                  <Text id="cf">4:15 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper backgroundColor="ctrlDisabled">
+                  <Text id="cf">4:30 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">4:45 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">5:00 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">5:15 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">5:30 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">5:45 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper backgroundColor="ctrlDisabled">
+                  <Text id="cf">6:00 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper backgroundColor="ctrlDisabled">
+                  <Text id="cf">6:15 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">6:30 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">6:45 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">7:00 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">7:15 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">7:30 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">7:45 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">8:00 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">8:15 pm</Text>
+                </TimeWrapper>
+                <TimeWrapper>
+                  <Text id="cf">8:30 pm</Text>
+                </TimeWrapper>
+              </layouts.EvenGrid>
+            </Wrapper>
+          </Box>
+        )}
       </Grid>
     </Box>
   );

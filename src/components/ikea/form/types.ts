@@ -7,7 +7,7 @@ export type LakehouseFormData = {
   emergencyGroup: string;
   articleNumber: string;
   // catalogs
-  catalogs?: string[];
+  city?: string;
   // compute
   addressType: string;
   cluster: DropdownOptionType;

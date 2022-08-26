@@ -52,7 +52,7 @@ export const LakehouseForm = memo(() => {
     },
     {
       key: "Schedule",
-      fields: [],
+      fields: ["city"],
       skippable: true,
       children: <ConfigurationStep />,
     },
