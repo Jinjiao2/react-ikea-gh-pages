@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import theme from "@tidbits/react-tidbits/theme";
 import { Box, TabbedHeader } from "@tidbits/react-tidbits";
 import { ThemeProvider } from "styled-components";
+import { GlobalStyle } from "@tidbits/react-tidbits/global";
 import {
   PageContainer,
   PageMenuType,

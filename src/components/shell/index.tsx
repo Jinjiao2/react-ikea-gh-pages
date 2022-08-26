@@ -17,6 +17,8 @@ const Container = styled.div`
   display: grid;
   background-color: white;
   grid-template-rows: auto 1fr auto;
+  margin-left: 5%;
+  margin-right: 5%;
 `;
 
 export const DataPlatformShell: FC = ({ children }) => {
