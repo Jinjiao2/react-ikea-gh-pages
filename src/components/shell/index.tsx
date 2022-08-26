@@ -129,41 +129,41 @@ export const DataPlatformShell: FC = ({ children }) => {
         <Content>
           <IkeasList />
         </Content>
+        <Footer sa="0">
+          <Breadcrumbs sb="spacer20">
+            <Breadcrumbs.Crumb textStyle="bodySmallEmph">
+              Join IKEA Family for free
+            </Breadcrumbs.Crumb>
+            <Breadcrumbs.Crumb>Item 1</Breadcrumbs.Crumb>
+            <Breadcrumbs.Crumb>Item 2</Breadcrumbs.Crumb>
+            <Breadcrumbs.Crumb>Item 3</Breadcrumbs.Crumb>
+            <Breadcrumbs.Crumb>Item 4</Breadcrumbs.Crumb>
+          </Breadcrumbs>
+          <HR sb="spacer15" />
+          <Text as="div" color="labelCaption" textStyle="bodySmallRegular">
+            <Box display={["block", "inline"]}>
+              © Inter IKEA Systems B.V. 1999-2022
+            </Box>
+            <List.Piped
+              textStyle="bodySmallRegular"
+              display="inline"
+              ml={[0, "30px"]}
+            >
+              <List.LI color="labelCaption">
+                <Footer.Link href="#">Help & support</Footer.Link>
+              </List.LI>
+              <List.LI color="labelCaption">
+                <Footer.Link href="#">Ways to shop</Footer.Link>
+              </List.LI>
+              <List.LI color="labelCaption">
+                <Footer.Link href="#">My account</Footer.Link>
+              </List.LI>
+            </List.Piped>
+          </Text>
+        </Footer>
       </Container>
-      {/* {isModalOpen && renderModal()} */}
 
-      <Footer sa="0">
-        <Breadcrumbs sb="spacer20">
-          <Breadcrumbs.Crumb textStyle="bodySmallEmph">
-            Join IKEA Family for free
-          </Breadcrumbs.Crumb>
-          <Breadcrumbs.Crumb>Item 1</Breadcrumbs.Crumb>
-          <Breadcrumbs.Crumb>Item 2</Breadcrumbs.Crumb>
-          <Breadcrumbs.Crumb>Item 3</Breadcrumbs.Crumb>
-          <Breadcrumbs.Crumb>Item 4</Breadcrumbs.Crumb>
-        </Breadcrumbs>
-        <HR sb="spacer15" />
-        <Text as="div" color="labelCaption" textStyle="bodySmallRegular">
-          <Box display={["block", "inline"]}>
-            © Inter IKEA Systems B.V. 1999-2022
-          </Box>
-          <List.Piped
-            textStyle="bodySmallRegular"
-            display="inline"
-            ml={[0, "30px"]}
-          >
-            <List.LI color="labelCaption">
-              <Footer.Link href="#">Help & support</Footer.Link>
-            </List.LI>
-            <List.LI color="labelCaption">
-              <Footer.Link href="#">Ways to shop</Footer.Link>
-            </List.LI>
-            <List.LI color="labelCaption">
-              <Footer.Link href="#">My account</Footer.Link>
-            </List.LI>
-          </List.Piped>
-        </Text>
-      </Footer>
+      {/* {isModalOpen && renderModal()} */}
     </ThemeProvider>
   );
 };
