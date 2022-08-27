@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/react-ikea-gh-pages/static/css/main.04ad566a.css",
-    "main.js": "/react-ikea-gh-pages/static/js/main.100dbf47.js",
+    "main.js": "/react-ikea-gh-pages/static/js/main.806d867e.js",
     "static/media/p1.png": "/react-ikea-gh-pages/static/media/p1.b65721bcf244ec43be46.png",
     "static/media/Ikea_logo.svg": "/react-ikea-gh-pages/static/media/Ikea_logo.d11772bc06185cd81d3bf12b1ca74e2f.svg",
     "static/media/bank-svgrepo-com.svg": "/react-ikea-gh-pages/static/media/bank-svgrepo-com.2b301358d47795e5ae54dd3c8cda59e7.svg",
     "static/media/address-book-svgrepo-com.svg": "/react-ikea-gh-pages/static/media/address-book-svgrepo-com.ccd40c98d9ca4ca04822e57f72ca1b1e.svg",
     "index.html": "/react-ikea-gh-pages/index.html",
     "main.04ad566a.css.map": "/react-ikea-gh-pages/static/css/main.04ad566a.css.map",
-    "main.100dbf47.js.map": "/react-ikea-gh-pages/static/js/main.100dbf47.js.map"
+    "main.806d867e.js.map": "/react-ikea-gh-pages/static/js/main.806d867e.js.map"
   },
   "entrypoints": [
     "static/css/main.04ad566a.css",
-    "static/js/main.100dbf47.js"
+    "static/js/main.806d867e.js"
   ]
 }
