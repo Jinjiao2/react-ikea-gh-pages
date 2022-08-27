@@ -134,10 +134,9 @@ export const DataPlatformShell: FC = ({ children }) => {
             <Breadcrumbs.Crumb textStyle="bodySmallEmph">
               Join IKEA Family for free
             </Breadcrumbs.Crumb>
-            <Breadcrumbs.Crumb>Item 1</Breadcrumbs.Crumb>
-            <Breadcrumbs.Crumb>Item 2</Breadcrumbs.Crumb>
-            <Breadcrumbs.Crumb>Item 3</Breadcrumbs.Crumb>
-            <Breadcrumbs.Crumb>Item 4</Breadcrumbs.Crumb>
+            <Breadcrumbs.Crumb>Help & support</Breadcrumbs.Crumb>
+            <Breadcrumbs.Crumb>My account</Breadcrumbs.Crumb>
+            <Breadcrumbs.Crumb>About IKEA</Breadcrumbs.Crumb>
           </Breadcrumbs>
           <HR sb="spacer15" />
           <Text as="div" color="labelCaption" textStyle="bodySmallRegular">
