@@ -91,9 +91,9 @@ export const ProductsStep = () => {
         <TidbitsLink href="/" target="_blank" rel="noopener noreferrer">
           {/* documentation */}
           {/* FIXME: add link */}
-          documentation
+          link
         </TidbitsLink>{" "}
-        for more information about Catalogs.
+        for more information about articles.
       </Text>
     </Box>
   );
